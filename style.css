@@ -1,0 +1,193 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.box label {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+}
+
+.box span{
+    color: red;
+}
+
+.box input {
+    border-radius: 3px;
+    height: 30px;
+    border: 0.5px solid #696969;
+    margin-bottom: 3px;
+    padding: 0px 6px;
+}
+
+
+.container {
+    height: 98vh;
+    width: 99vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 190, 190);
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.form {
+    width: 450px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.customer-name {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.first-name,
+.last-name {
+    width: 50%;
+}
+
+.first-name {
+    margin-right: 10px;
+}
+
+
+.checkbox {
+    flex-direction:row;
+}
+
+.general,
+.support {
+    width: 50%;
+    flex-direction: row;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 1px 15px;
+    align-items: center;
+    height: 35px;
+}
+
+.general {
+    margin-right: 10px;
+}
+
+.terms {
+    flex-direction: row;
+    align-items: center;
+}
+
+.check {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    height: 13px;
+}
+
+.general label,
+.support label,
+.terms label {
+    margin-top: px;
+}
+
+.submit button {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: hsl(169, 82%, 27%);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.message textarea {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.first-name input:focus,
+.last-name input:focus,
+.email input:focus,
+.message textarea:focus {
+    border-color: transparent;
+    outline: 2px solid hsl(169, 99%, 42%);
+}
+
+.error {
+    font-size: 0.6rem;
+    margin-top: -1px;
+    margin-bottom: 3px;
+    color: red;
+    display: none;
+}
+
+.error.visible {
+    display: block;
+}
+
+.query-type .error {
+    margin-top: -6px;
+}
+
+
+.message .error {
+    margin-top: 3PX;
+}
+
+.concent .error {
+    margin-top: -12px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:576px){
+
+  
+
+    .box {
+        width: 100%;
+    }
+
+    .form {
+        height: auto;
+        width: 70%;
+    }
+
+    .customer-name,
+    .checkbox {
+        flex-direction: column;
+    }
+    
+    .selected {
+        margin-top: 4px;
+    }
+
+}
